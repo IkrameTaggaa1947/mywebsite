@@ -182,6 +182,7 @@ h1,h2,h3,.mark,.belief p,.contact .addr{font-family:var(--display);font-weight:7
 .belief p{font-weight:600}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
+<script>document.addEventListener('error',function(e){var t=e.target;if(t.tagName==='IMG'&&!t.dataset.retry){t.dataset.retry=1;var f=t.getAttribute('src');if(f&&f.indexOf('/')<0)t.src='images/'+f}},true);</script>
 </head>
 <body>
 <nav class="nav" aria-label="Main">
@@ -207,7 +208,7 @@ h1,h2,h3,.mark,.belief p,.contact .addr{font-family:var(--display);font-weight:7
         <a class="btn ghost" href="#contact">Contact me</a>
       </div>
     </div>
-    <figure class="shot" data-src="images/portrait.jpg" data-alt="Portrait of Ikrame Taggaa"><span>My portrait<small>portrait.jpg</small></span></figure>
+    <figure class="shot" data-src="portrait.jpg" data-alt="Portrait of Ikrame Taggaa"><span>My portrait<small>portrait.jpg</small></span></figure>
   </div>
 </header>
 
@@ -235,10 +236,10 @@ h1,h2,h3,.mark,.belief p,.contact .addr{font-family:var(--display);font-weight:7
     <div class="work">
       <div class="stage reveal" id="stage">
         <div class="box" id="box">
-          <img class="f1" src="images/recybot-front.jpg" alt="Front of the RecyBot cover: how it works in four steps, and the line Recycle and give value to your bottles">
-          <img class="f2" src="images/recybot-side-facts.jpg" alt="Side of the RecyBot cover: three facts about PET bottles in Morocco">
-          <img class="f3" src="images/recybot-back.jpg" alt="Back of the RecyBot cover: a QR code that opens the website">
-          <img class="f4" src="images/recybot-side-safety.jpg" alt="Side of the RecyBot cover: safety warning">
+          <img class="f1" src="recybot-front.jpg" alt="Front of the RecyBot cover: how it works in four steps, and the line Recycle and give value to your bottles">
+          <img class="f2" src="recybot-side-facts.jpg" alt="Side of the RecyBot cover: three facts about PET bottles in Morocco">
+          <img class="f3" src="recybot-back.jpg" alt="Back of the RecyBot cover: a QR code that opens the website">
+          <img class="f4" src="recybot-side-safety.jpg" alt="Side of the RecyBot cover: safety warning">
           <span class="lid"></span>
         </div>
         <div class="turn" role="group" aria-label="Turn the RecyBot cover">
@@ -268,11 +269,11 @@ h1,h2,h3,.mark,.belief p,.contact .addr{font-family:var(--display);font-weight:7
       </div>
     </div>
     <div class="pages">
-      <figure class="reveal tilt big" style="--d:0s"><img src="images/um6p-cover.jpg" alt="Cover of the UM6P Research Office annual report 2025" loading="lazy" width="760" height="1075"><figcaption>Cover</figcaption></figure>
-      <figure class="reveal tilt" style="--d:.1s"><img src="images/um6p-contents.jpg" alt="Table of contents with 11 chapters" loading="lazy" width="640" height="905"><figcaption>Table of contents</figcaption></figure>
-      <figure class="reveal tilt" style="--d:.2s"><img src="images/um6p-chapter.jpg" alt="Chapter opener: Strategic Research Initiatives" loading="lazy" width="640" height="905"><figcaption>Chapter opener</figcaption></figure>
-      <figure class="reveal tilt" style="--d:.3s"><img src="images/um6p-data.jpg" alt="Data page with two pie charts and a bar chart" loading="lazy" width="640" height="905"><figcaption>Data page</figcaption></figure>
-      <figure class="reveal tilt" style="--d:.4s"><img src="images/um6p-events.jpg" alt="Event page with text and a photo of a workshop" loading="lazy" width="640" height="905"><figcaption>Event page</figcaption></figure>
+      <figure class="reveal tilt big" style="--d:0s"><img src="um6p-cover.jpg" alt="Cover of the UM6P Research Office annual report 2025" loading="lazy" width="760" height="1075"><figcaption>Cover</figcaption></figure>
+      <figure class="reveal tilt" style="--d:.1s"><img src="um6p-contents.jpg" alt="Table of contents with 11 chapters" loading="lazy" width="640" height="905"><figcaption>Table of contents</figcaption></figure>
+      <figure class="reveal tilt" style="--d:.2s"><img src="um6p-chapter.jpg" alt="Chapter opener: Strategic Research Initiatives" loading="lazy" width="640" height="905"><figcaption>Chapter opener</figcaption></figure>
+      <figure class="reveal tilt" style="--d:.3s"><img src="um6p-data.jpg" alt="Data page with two pie charts and a bar chart" loading="lazy" width="640" height="905"><figcaption>Data page</figcaption></figure>
+      <figure class="reveal tilt" style="--d:.4s"><img src="um6p-events.jpg" alt="Event page with text and a photo of a workshop" loading="lazy" width="640" height="905"><figcaption>Event page</figcaption></figure>
     </div>
 
     <div class="work solo">
@@ -283,15 +284,15 @@ h1,h2,h3,.mark,.belief p,.contact .addr{font-family:var(--display);font-weight:7
       </div>
     </div>
     <div class="reel reveal" id="reel" tabindex="0" role="group" aria-label="Mandate recap, 9 slides">
-        <img src="images/eje-recap-1.jpg" alt="Slide 1: Cover slide: our 25-26 mandate highlights" loading="lazy" width="810" height="1080">
-        <img src="images/eje-recap-2.jpg" alt="Slide 2: 244 KMAD in sales revenue, 13 missions, 33 junior consultants, 87.7% annual growth" loading="lazy" width="810" height="1080">
-        <img src="images/eje-recap-3.jpg" alt="Slide 3: Strategy Consulting Hackathon, 5th edition, in partnership with Strategy&amp;" loading="lazy" width="810" height="1080">
-        <img src="images/eje-recap-4.jpg" alt="Slide 4: Photos from the Strategy Consulting Hackathon" loading="lazy" width="810" height="1080">
-        <img src="images/eje-recap-5.jpg" alt="Slide 5: DataQuest hackathon, 1st edition, in partnership with BCG X" loading="lazy" width="810" height="1080">
-        <img src="images/eje-recap-6.jpg" alt="Slide 6: DataQuest brought together students from three engineering schools" loading="lazy" width="810" height="1080">
-        <img src="images/eje-recap-7.jpg" alt="Slide 7: Our projects by type: web development, artificial intelligence, R&amp;D, robotics, design, photography" loading="lazy" width="810" height="1080">
-        <img src="images/eje-recap-8.jpg" alt="Slide 8: Thank you to all the members of this mandate" loading="lazy" width="810" height="1080">
-        <img src="images/eje-recap-9.jpg" alt="Slide 9: Contact details of EMINES Junior Enterprise" loading="lazy" width="810" height="1080">
+        <img src="eje-recap-1.jpg" alt="Slide 1: Cover slide: our 25-26 mandate highlights" loading="lazy" width="810" height="1080">
+        <img src="eje-recap-2.jpg" alt="Slide 2: 244 KMAD in sales revenue, 13 missions, 33 junior consultants, 87.7% annual growth" loading="lazy" width="810" height="1080">
+        <img src="eje-recap-3.jpg" alt="Slide 3: Strategy Consulting Hackathon, 5th edition, in partnership with Strategy&amp;" loading="lazy" width="810" height="1080">
+        <img src="eje-recap-4.jpg" alt="Slide 4: Photos from the Strategy Consulting Hackathon" loading="lazy" width="810" height="1080">
+        <img src="eje-recap-5.jpg" alt="Slide 5: DataQuest hackathon, 1st edition, in partnership with BCG X" loading="lazy" width="810" height="1080">
+        <img src="eje-recap-6.jpg" alt="Slide 6: DataQuest brought together students from three engineering schools" loading="lazy" width="810" height="1080">
+        <img src="eje-recap-7.jpg" alt="Slide 7: Our projects by type: web development, artificial intelligence, R&amp;D, robotics, design, photography" loading="lazy" width="810" height="1080">
+        <img src="eje-recap-8.jpg" alt="Slide 8: Thank you to all the members of this mandate" loading="lazy" width="810" height="1080">
+        <img src="eje-recap-9.jpg" alt="Slide 9: Contact details of EMINES Junior Enterprise" loading="lazy" width="810" height="1080">
     </div>
     <div class="turn reelnav">
       <button type="button" id="prev" aria-label="Previous slide">←</button>
@@ -313,7 +314,7 @@ h1,h2,h3,.mark,.belief p,.contact .addr{font-family:var(--display);font-weight:7
 
     <div class="cards two">
       <article class="card feature" data-lens="consulting strategy">
-        <figure class="shot" style="aspect-ratio:910/506" data-src="images/epal.jpg" data-alt="Overview page of the permit dashboard, with key figures and two maps of Portugal"><span>The dashboard, or me at EPAL<small>epal.jpg</small></span></figure>
+        <figure class="shot" style="aspect-ratio:910/506" data-src="epal.jpg" data-alt="Overview page of the permit dashboard, with key figures and two maps of Portugal"><span>The dashboard, or me at EPAL<small>epal.jpg</small></span></figure>
         <div>
           <p class="date">June to September 2026 · Lisbon, Portugal</p>
           <h3>A permit dashboard for EPAL</h3>
@@ -324,7 +325,7 @@ h1,h2,h3,.mark,.belief p,.contact .addr{font-family:var(--display);font-weight:7
       </article>
 
       <article class="card" data-lens="strategy">
-        <figure class="shot" data-src="images/neuratech.jpg" data-alt="Pitching NeuraTech on stage at AgorAI"><span>NeuraTech pitch, or Gitex Africa<small>neuratech.jpg</small></span></figure>
+        <figure class="shot" data-src="neuratech.jpg" data-alt="Pitching NeuraTech on stage at AgorAI"><span>NeuraTech pitch, or Gitex Africa<small>neuratech.jpg</small></span></figure>
         <p class="date">September 2024 to April 2026 · A project I started</p>
         <h3>NeuraTech</h3>
         <p>A project to give people with severe paralysis a way to communicate again, without surgery.</p>
@@ -333,7 +334,7 @@ h1,h2,h3,.mark,.belief p,.contact .addr{font-family:var(--display);font-weight:7
       </article>
 
       <article class="card" data-lens="strategy">
-        <figure class="shot" data-src="images/water.jpg" data-alt="Presenting the study on the future of water supply for Moroccan industry"><span>Team, or final presentation<small>water.jpg</small></span></figure>
+        <figure class="shot" data-src="water.jpg" data-alt="Presenting the study on the future of water supply for Moroccan industry"><span>Team, or final presentation<small>water.jpg</small></span></figure>
         <p class="date">January 2025 · Mines Paris - PSL × OCP Chair</p>
         <h3>Water for Moroccan industry</h3>
         <p>Moroccan industry uses about 1.03 billion m³ of water a year. In a team of 12, we compared recycling, industrial symbiosis and desalination with international examples such as Kalundborg in Denmark.</p>
@@ -342,7 +343,7 @@ h1,h2,h3,.mark,.belief p,.contact .addr{font-family:var(--display);font-weight:7
       </article>
 
       <article class="card" data-lens="consulting">
-        <figure class="shot" data-src="images/eje.jpg" data-alt="In Porto with the director of partnerships of a Portuguese junior enterprise"><span>Porto meeting<small>eje.jpg</small></span></figure>
+        <figure class="shot" data-src="eje.jpg" data-alt="In Porto with the director of partnerships of a Portuguese junior enterprise"><span>Porto meeting<small>eje.jpg</small></span></figure>
         <p class="date">2026 · EMINES Junior Enterprise</p>
         <h3>A partnership negotiated in person in Porto</h3>
         <p>As Vice President, I negotiated a partnership with the junior enterprise of a Portuguese business school. I went to Porto for a business meeting with their director of partnerships, pictured here.</p>
@@ -351,7 +352,7 @@ h1,h2,h3,.mark,.belief p,.contact .addr{font-family:var(--display);font-weight:7
       </article>
 
       <article class="card" data-lens="consulting strategy">
-        <figure class="shot" data-src="images/strategyand.jpg" data-alt="At the Strategy& office in Casablanca"><span>At the Strategy&amp; office<small>strategyand.jpg</small></span></figure>
+        <figure class="shot" data-src="strategyand.jpg" data-alt="At the Strategy& office in Casablanca"><span>At the Strategy&amp; office<small>strategyand.jpg</small></span></figure>
         <p class="date">March 2026 · Casablanca</p>
         <h3>One week at Strategy&amp;</h3>
         <p>An observation internship at Strategy&amp; (PwC). I followed 3 client engagements: a commercial due diligence, a market positioning and a foresight study.</p>
@@ -393,26 +394,26 @@ h1,h2,h3,.mark,.belief p,.contact .addr{font-family:var(--display);font-weight:7
 
     <h3 class="sub">Events we organized with BCG X and Strategy&amp;</h3>
     <div class="pair">
-      <figure><div class="shot" data-src="images/dqh.jpg" data-pos="50% 78%" data-alt="Participants and organizers at the DataQuest Hackathon with BCG X"><span>DataQuest with BCG X<small>dqh.jpg</small></span></div><figcaption>DataQuest Hackathon, 1st edition, with BCG X</figcaption></figure>
-      <figure><div class="shot" data-src="images/sch.jpg" data-alt="Participants and organizers at the Strategy Consulting Hackathon with Strategy&amp;"><span>Strategy Consulting Hackathon<small>sch.jpg</small></span></div><figcaption>Strategy Consulting Hackathon, 5th edition, with Strategy&amp;</figcaption></figure>
+      <figure><div class="shot" data-src="dqh.jpg" data-pos="50% 78%" data-alt="Participants and organizers at the DataQuest Hackathon with BCG X"><span>DataQuest with BCG X<small>dqh.jpg</small></span></div><figcaption>DataQuest Hackathon, 1st edition, with BCG X</figcaption></figure>
+      <figure><div class="shot" data-src="sch.jpg" data-alt="Participants and organizers at the Strategy Consulting Hackathon with Strategy&amp;"><span>Strategy Consulting Hackathon<small>sch.jpg</small></span></div><figcaption>Strategy Consulting Hackathon, 5th edition, with Strategy&amp;</figcaption></figure>
     </div>
 
     <h3 class="sub">Awards</h3>
     <div class="cards">
       <article class="card">
-        <figure class="shot" data-src="images/hackai.jpg" data-alt="Our team at HackAI"><span>HackAI team photo<small>hackai.jpg</small></span></figure>
+        <figure class="shot" data-src="hackai.jpg" data-alt="Our team at HackAI"><span>HackAI team photo<small>hackai.jpg</small></span></figure>
         <p class="date">First place</p>
         <h3>HackAI</h3>
         <p>The national AI hackathon organized by 1337, ElevenLabs and Hugging Face. Our team of 4 solved 24 AI challenges and built a business concept in two and a half days.</p>
       </article>
       <article class="card">
-        <figure class="shot" data-src="images/agorai.jpg" data-pos="50% 62%" data-alt="Pitching at AgorAI"><span>AgorAI pitch photo<small>agorai.jpg</small></span></figure>
+        <figure class="shot" data-src="agorai.jpg" data-pos="50% 62%" data-alt="Pitching at AgorAI"><span>AgorAI pitch photo<small>agorai.jpg</small></span></figure>
         <p class="date">Best Pitch Award</p>
         <h3>AgorAI</h3>
         <p>The AI Spring School hackathon organized by École Polytechnique and OCP. We were a team of 4 and I pitched NeuraTech.</p>
       </article>
       <article class="card">
-        <figure class="shot" data-src="images/ramadania.jpg" data-pos="50% 45%" data-alt="Our team at RamadanIA"><span>RamadanIA photo<small>ramadania.jpg</small></span></figure>
+        <figure class="shot" data-src="ramadania.jpg" data-pos="50% 45%" data-alt="Our team at RamadanIA"><span>RamadanIA photo<small>ramadania.jpg</small></span></figure>
         <p class="date">Territorial Impact Award, Marrakech-Safi</p>
         <h3>RamadanIA</h3>
         <p>Our team of 5 proposed an application that predicts well water quality for farmers. We pitched it to the Ministry of Digital Transition and presented it at the national final.</p>
@@ -428,9 +429,9 @@ h1,h2,h3,.mark,.belief p,.contact .addr{font-family:var(--display);font-weight:7
     <div style="height:30px"></div>
 
     <div class="gallery">
-      <figure><div class="shot" data-src="images/running.jpg" data-pos="50% 25%" data-alt="The EMINES athletics team on the track"><span>Running<small>running.jpg</small></span></div><figcaption>Running with the EMINES athletics team</figcaption></figure>
-      <figure><div class="shot" data-src="images/football.jpg" data-alt="The EMINES football team after winning first place at the CARTEL in Nantes"><span>Football<small>football.jpg</small></span></div><figcaption>The EMINES football team, first place at the CARTEL in Nantes, 2024</figcaption></figure>
-      <figure><div class="shot" data-src="images/volunteering.jpg" data-alt="Volunteers of EMINES Solidarity in the hills of Moulay Brahim"><span>Volunteering<small>volunteering.jpg</small></span></div><figcaption>Volunteering with EMINES Solidarity: the Goutte d'Espoir event in Moulay Brahim, 2023</figcaption></figure>
+      <figure><div class="shot" data-src="running.jpg" data-pos="50% 25%" data-alt="The EMINES athletics team on the track"><span>Running<small>running.jpg</small></span></div><figcaption>Running with the EMINES athletics team</figcaption></figure>
+      <figure><div class="shot" data-src="football.jpg" data-alt="The EMINES football team after winning first place at the CARTEL in Nantes"><span>Football<small>football.jpg</small></span></div><figcaption>The EMINES football team, first place at the CARTEL in Nantes, 2024</figcaption></figure>
+      <figure><div class="shot" data-src="volunteering.jpg" data-alt="Volunteers of EMINES Solidarity in the hills of Moulay Brahim"><span>Volunteering<small>volunteering.jpg</small></span></div><figcaption>Volunteering with EMINES Solidarity: the Goutte d'Espoir event in Moulay Brahim, 2023</figcaption></figure>
     </div>
   </div>
 </section>
@@ -472,6 +473,7 @@ document.querySelectorAll('.shot[data-src]').forEach(f=>{
   img.alt=f.dataset.alt||'';
   if(f.dataset.pos)img.style.objectPosition=f.dataset.pos;
   img.onload=()=>{f.appendChild(img);f.classList.add('filled')};
+  img.onerror=()=>{img.onerror=null;img.src='images/'+f.dataset.src};
   img.src=f.dataset.src;
 });
 
