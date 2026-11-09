@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ikrame Taggaa | Strategy, Brand and Consulting</title>
-<meta name="description" content="Ikrame Taggaa, final-year engineering student at EMINES (UM6P). Brand work, strategy and consulting projects, leadership roles and awards.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ikrame Taggaa Portfolio</title>
+<meta name="description" content="Portfolio of Ikrame Taggaa, final-year engineering student at EMINES (UM6P): strategy and transformation projects, junior enterprise leadership and results.">
+<style>html,body{margin:0;padding:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap">
-<style>[hidden]{display:none!important}</style>
 <style>
-/* Look: white pages, one flat corporate blue, serif headings over plain sans text, photo-led story cards, square corners throughout. No gradients, no decoration. */
+/* Look: white pages, one flat corporate blue, serif headings over plain sans text, photo-led project cards, square corners throughout. */
 :root{
   --blue:#003da5; --blue-deep:#002a73; --on-blue:#ffffff; --on-blue-soft:#d5e2f8;
   --paper:#ffffff; --tint:#eef4fc; --ink:#1b2437; --muted:#56617a; --line:#d9e2f0;
@@ -28,6 +28,7 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:76px}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);font-size:18px;line-height:1.55;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--paper)}
 h1,h2,h3,p{margin:0}
 h1,h2,h3{text-wrap:balance}
 a{color:var(--link)}
@@ -35,19 +36,19 @@ a{color:var(--link)}
 :focus-visible{outline:3px solid currentColor;outline-offset:3px;border-radius:2px}
 
 /* nav */
-.nav{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line)}
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--paper);border-bottom:1px solid var(--line)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
 .mark{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:800;font-size:18px;color:var(--head)}
-.mark i{display:grid;place-items:center;width:40px;height:40px;border-radius:3px;background:var(--blue);color:#fff;font-style:normal;font-size:14px;font-weight:800;letter-spacing:.02em}
+.mark i{display:grid;place-items:center;width:40px;height:40px;border-radius:3px;background:var(--blue);color:var(--on-blue);font-style:normal;font-size:14px;font-weight:800;letter-spacing:.02em}
 .nav ul{display:flex;align-items:center;gap:28px;list-style:none;margin:0;padding:0;font-weight:700;font-size:16px}
 .nav ul a{text-decoration:none;color:var(--ink)}
 .nav ul a:hover{color:var(--link)}
-@media(max-width:900px){.nav ul li:not(.keep){display:none}}
+@media(max-width:700px){.nav ul li:not(.keep){display:none}}
 
-.btn{display:inline-block;font:700 16px var(--font);padding:12px 26px;border-radius:3px;text-decoration:none;border:2px solid var(--blue);background:var(--blue);color:#fff;cursor:pointer}
-.nav ul a.btn{color:#fff;padding:9px 22px}
-.btn.white{background:#fff;border-color:#fff;color:var(--blue)}
-.btn.ghost{background:transparent;border-color:#fff;color:#fff}
+.btn{display:inline-block;font:700 16px var(--font);padding:12px 26px;border-radius:3px;text-decoration:none;border:2px solid var(--blue);background:var(--blue);color:var(--on-blue);cursor:pointer}
+.nav ul a.btn{color:var(--on-blue);padding:9px 22px}
+.btn.white{background:var(--on-blue);border-color:var(--on-blue);color:var(--blue)}
+.btn.ghost{background:transparent;border-color:var(--on-blue);color:var(--on-blue)}
 .btn:hover{filter:brightness(1.08)}
 
 /* hero */
@@ -56,7 +57,7 @@ a{color:var(--link)}
 .hero h1{font-size:clamp(44px,7.4vw,84px);line-height:1;font-weight:800;letter-spacing:-.02em}
 .hero p{font-size:clamp(18px,2vw,21px);line-height:1.5;margin-top:22px;max-width:36em}
 .hero .row{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
-.hero .shot{aspect-ratio:4/5;border-radius:4px;background:rgba(255,255,255,.14);color:#fff;border-color:rgba(255,255,255,.5)}
+.hero .shot{aspect-ratio:4/5;border-radius:4px;background:rgba(255,255,255,.14);color:var(--on-blue);border-color:rgba(255,255,255,.5)}
 @media(max-width:820px){.hero .wrap{grid-template-columns:1fr;gap:36px;padding-block:48px}.hero .shot{max-width:280px}}
 
 /* now */
@@ -76,19 +77,24 @@ h2{font-size:clamp(32px,4.4vw,48px);line-height:1.1;font-weight:800;color:var(--
 .intro{font-size:19px;max-width:44em;margin-top:14px}
 .sub{font-size:26px;font-weight:800;color:var(--head);margin:56px 0 22px}
 
+/* approach + key figures */
 .belief{padding-block:68px}
-.belief p{font-size:clamp(23px,3.2vw,34px);line-height:1.32;font-weight:700;color:var(--head);max-width:26em}
+.belief p{font-size:clamp(23px,3.2vw,34px);line-height:1.32;font-weight:600;color:var(--head);max-width:26em}
+.figs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin:44px 0 0;padding:28px 0 0;border-top:1px solid var(--line)}
+.figs div{min-width:0}
+.figs dt{font-family:var(--display);font-weight:700;font-size:clamp(34px,4.4vw,48px);line-height:1;color:var(--head);font-variant-numeric:tabular-nums}
+.figs dd{margin:8px 0 0;font-size:16px;line-height:1.4;color:var(--muted)}
+@media(max-width:780px){.figs{grid-template-columns:1fr 1fr;gap:28px 20px}}
 
 /* filter */
 .filter{display:flex;flex-wrap:wrap;gap:10px;margin:30px 0 36px}
-.filter button{font:700 16px var(--font);padding:10px 22px;border-radius:3px;border:2px solid var(--blue);background:transparent;color:var(--link);cursor:pointer}
-.filter button[aria-pressed="true"]{background:var(--blue);color:#fff}
-:root[data-theme="dark"] .filter button{border-color:var(--link)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .filter button{border-color:var(--link)}}
+.filter button{font:700 16px var(--font);padding:10px 22px;border-radius:3px;border:2px solid var(--link);background:transparent;color:var(--link);cursor:pointer}
+.filter button[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:var(--on-blue)}
 
-/* story cards */
+/* project cards */
 .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:44px 30px}
 .cards.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.card{min-width:0}
 .card[hidden]{display:none}
 .card .shot{margin-bottom:16px}
 .card .date{font-size:15px;color:var(--muted);font-weight:600}
@@ -99,56 +105,18 @@ h2{font-size:clamp(32px,4.4vw,48px);line-height:1.1;font-weight:800;color:var(--
 .card.feature .shot{margin:0}
 .card.feature h3{font-size:clamp(26px,3.2vw,36px)}
 .card.feature p{font-size:18px}
+.card.wide{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:16px 40px;padding-top:30px;border-top:1px solid var(--line)}
+.card.wide h3{font-size:clamp(24px,2.8vw,30px)}
 @media(max-width:940px){.cards{grid-template-columns:1fr 1fr}}
-@media(max-width:640px){.cards,.cards.two{grid-template-columns:1fr}.card.feature{grid-template-columns:1fr;gap:16px}}
+@media(max-width:640px){.cards,.cards.two{grid-template-columns:1fr}.card.feature,.card.wide{grid-template-columns:1fr;gap:16px}}
 
 /* photo slots */
-.shot{margin:0;position:relative;aspect-ratio:16/10;border-radius:4px;overflow:hidden;background:var(--slot);color:var(--slot-ink);border:2px dashed var(--line);display:grid;place-items:center;text-align:center}
-.shot.sq{aspect-ratio:1}
+.shot{margin:0;position:relative;aspect-ratio:16/10;max-width:100%;border-radius:4px;overflow:hidden;background:var(--slot);color:var(--slot-ink);border:2px dashed var(--line);display:grid;place-items:center;text-align:center}
 .shot span{padding:14px;font-size:15px;font-weight:700;line-height:1.35}
 .shot small{display:block;font-weight:600;opacity:.8;font-size:13px}
 .shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .shot.filled{border:0}
 .shot.filled span{display:none}
-
-/* brand work */
-.work{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:56px;align-items:center;margin-top:44px}
-.work.solo{grid-template-columns:minmax(0,1fr);margin-top:84px;max-width:760px}
-.work .date{font-size:15px;color:var(--muted);font-weight:600}
-.work .title{font-size:clamp(26px,3.2vw,36px);line-height:1.15;font-weight:800;color:var(--head);margin:4px 0 14px}
-.work p+p{margin-top:12px}
-.work .links{margin-top:22px}
-.stage{display:grid;justify-items:center;gap:52px;perspective:1500px;padding-top:24px}
-.box{--w:clamp(150px,21vw,230px);--h:calc(var(--w)*1.9);width:var(--w);height:var(--h);position:relative;transform-style:preserve-3d;transform:rotateX(-7deg) rotateY(-28deg)}
-.box.snap{transition:transform .9s cubic-bezier(.2,.7,.2,1)}
-.box img,.box .lid{position:absolute;left:0;top:0;width:100%;height:100%;backface-visibility:hidden;display:block}
-.box .f1{transform:translateZ(calc(var(--w)/2))}
-.box .f2{transform:rotateY(90deg) translateZ(calc(var(--w)/2))}
-.box .f3{transform:rotateY(180deg) translateZ(calc(var(--w)/2))}
-.box .f4{transform:rotateY(-90deg) translateZ(calc(var(--w)/2))}
-.box .lid{height:var(--w);top:calc(50% - var(--w)/2);background:#8fa3b1;transform:rotateX(90deg) translateZ(calc(var(--h)/2))}
-.turn{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
-.turn button{font:700 15px var(--font);padding:8px 16px;border-radius:3px;border:2px solid var(--blue);background:transparent;color:var(--link);cursor:pointer}
-.turn button.on,.turn button:hover{background:var(--blue);color:#fff}
-:root[data-theme="dark"] .turn button{border-color:var(--link)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .turn button{border-color:var(--link)}}
-.pages{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;margin-top:30px;align-items:start}
-.pages figure{margin:0}
-.pages .big{grid-column:span 2;grid-row:span 2}
-.pages img{width:100%;height:auto;display:block;border-radius:3px;border:1px solid var(--line);transition:transform .25s ease}
-.pages figure:hover img{transform:translateY(-6px)}
-.pages figcaption{font-size:15px;color:var(--muted);margin-top:8px}
-.js .reveal.tilt{transform:translateY(40px) rotate(-3deg)}
-.js .reveal.tilt.in{transform:none}
-@media(max-width:700px){.pages{grid-template-columns:1fr 1fr}}
-@media(prefers-reduced-motion:reduce){.js .reveal.tilt{transform:none}.pages figure:hover img{transform:none}}
-.reel{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;margin-top:28px;padding-bottom:12px;scrollbar-width:thin}
-.reel img{flex:0 0 auto;width:clamp(210px,24vw,290px);height:auto;aspect-ratio:3/4;border-radius:4px;scroll-snap-align:start;border:1px solid var(--line)}
-.reelnav{justify-content:flex-start;margin-top:14px}
-.js .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
-.js .reveal.in{opacity:1;transform:none}
-@media(max-width:820px){.work{grid-template-columns:1fr;gap:32px}}
-@media(prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none;transition:none}.box.snap{transition:none}}
 
 /* roles */
 .roles{border-top:1px solid var(--line)}
@@ -159,21 +127,23 @@ h2{font-size:clamp(32px,4.4vw,48px);line-height:1.1;font-weight:800;color:var(--
 .role p{margin-top:6px;max-width:46em}
 @media(max-width:700px){.role{grid-template-columns:1fr;gap:4px}}
 
-/* outside class */
-.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px 20px}
+/* mandate results */
+.mandate{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin:0}
+.mandate div{background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:20px 22px;min-width:0}
+.mandate dt{font-family:var(--display);font-weight:700;font-size:clamp(28px,3.4vw,38px);line-height:1.05;color:var(--head);font-variant-numeric:tabular-nums}
+.mandate dd{margin:6px 0 0;font-size:16px;color:var(--muted)}
+.note{font-size:15px;color:var(--muted);margin-top:12px}
+@media(max-width:780px){.mandate{grid-template-columns:1fr 1fr}}
 
 .pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px}
-.pair figure{margin:0}
+.pair figure{margin:0;min-width:0}
 .pair .shot{aspect-ratio:2/1}
 .pair figcaption{font-size:15px;color:var(--muted);margin-top:8px}
 @media(max-width:640px){.pair{grid-template-columns:1fr}}
-.gallery figcaption{font-size:15px;color:var(--muted);margin-top:8px}
-.gallery figure{margin:0}
-@media(max-width:700px){.gallery{grid-template-columns:1fr}}
 
 /* contact */
-.contact{background:var(--blue);color:#fff}
-.contact h2{color:#fff}
+.contact{background:var(--blue);color:var(--on-blue)}
+.contact h2{color:var(--on-blue)}
 .contact p{font-size:19px;margin-top:14px;max-width:38em}
 .contact .addr{display:block;font-size:clamp(20px,3.2vw,32px);font-weight:800;margin-top:30px;overflow-wrap:anywhere;user-select:all}
 .contact .row{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
@@ -182,17 +152,15 @@ h1,h2,h3,.mark,.belief p,.contact .addr{font-family:var(--display);font-weight:7
 .belief p{font-weight:600}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
-<script>document.addEventListener('error',function(e){var t=e.target;if(t.tagName==='IMG'&&!t.dataset.retry){t.dataset.retry=1;var f=t.getAttribute('src');if(f&&f.indexOf('/')<0)t.src='images/'+f}},true);</script>
 </head>
 <body>
 <nav class="nav" aria-label="Main">
   <div class="wrap">
     <a class="mark" href="#top" aria-label="Back to top"><i>IT</i></a>
     <ul>
-      <li><a href="#brand-work">My brand work</a></li>
+      <li><a href="#approach">My approach</a></li>
       <li><a href="#projects">My projects</a></li>
       <li><a href="#impact">My impact</a></li>
-      <li><a href="#life">Outside class</a></li>
       <li class="keep"><a class="btn" href="#contact">Contact</a></li>
     </ul>
   </div>
@@ -202,7 +170,7 @@ h1,h2,h3,.mark,.belief p,.contact .addr{font-family:var(--display);font-weight:7
   <div class="wrap">
     <div>
       <h1>Ikrame Taggaa</h1>
-      <p>I'm a final-year engineering student at EMINES, the School of Industrial Management of UM6P, and Vice President of our junior enterprise. I'm looking for an internship in brand management, strategy or consulting.</p>
+      <p>I'm a final-year engineering student at EMINES, the School of Industrial Management of UM6P, and Vice President of our junior enterprise. I'm looking for an end-of-studies internship in strategy from April 2027.</p>
       <div class="row">
         <a class="btn white" href="#projects">Explore my projects</a>
         <a class="btn ghost" href="#contact">Contact me</a>
@@ -216,183 +184,131 @@ h1,h2,h3,.mark,.belief p,.contact .addr{font-family:var(--display);font-weight:7
   <div class="wrap">
     <dl>
       <div><dt>Today</dt><dd>Vice President of EMINES Junior Enterprise, with a board of 23 students</dd></div>
-      <div><dt>Last summer</dt><dd>Data analyst intern at EPAL in Lisbon, Portugal</dd></div>
+      <div><dt>Last summer</dt><dd>Data and digitalization intern at EPAL in Lisbon, Portugal</dd></div>
       <div><dt>Class of 2027</dt><dd>Engineering degree in industrial management, EMINES, UM6P</dd></div>
     </dl>
   </div>
 </div>
 
-<section class="belief">
+<section class="belief" id="approach">
   <div class="wrap">
-    <p>I believe that winning with consumers starts with understanding their needs, relies on rigor in analyzing market data, and succeeds through collaboration across teams.</p>
+    <p>A good recommendation starts with the right questions, rests on numbers I can defend, and only creates value once the people who carry it out adopt it.</p>
+    <dl class="figs">
+      <div><dt>−98%</dt><dd>review time per permit at EPAL, from 45 minutes to about 50 seconds</dd></div>
+      <div><dt>2</dt><dd>client missions won with OCP for our junior enterprise</dd></div>
+      <div><dt>68%</dt><dd>potential cut in Moroccan industry's need for conventional fresh water</dd></div>
+      <div><dt>23</dt><dd>board members I supervise as Vice President</dd></div>
+    </dl>
   </div>
 </section>
 
-<section class="tint" id="brand-work">
-  <div class="wrap">
-    <h2>My brand work</h2>
-    <p class="intro">Three pieces of brand work: a recycling robot, a board report and my junior enterprise.</p>
-
-    <div class="work">
-      <div class="stage reveal" id="stage">
-        <div class="box" id="box">
-          <img class="f1" src="recybot-front.jpg" alt="Front of the RecyBot cover: how it works in four steps, and the line Recycle and give value to your bottles">
-          <img class="f2" src="recybot-side-facts.jpg" alt="Side of the RecyBot cover: three facts about PET bottles in Morocco">
-          <img class="f3" src="recybot-back.jpg" alt="Back of the RecyBot cover: a QR code that opens the website">
-          <img class="f4" src="recybot-side-safety.jpg" alt="Side of the RecyBot cover: safety warning">
-          <span class="lid"></span>
-        </div>
-        <div class="turn" role="group" aria-label="Turn the RecyBot cover">
-          <button type="button" data-face="0">Front</button>
-          <button type="button" data-face="1">Facts</button>
-          <button type="button" data-face="2">Back</button>
-          <button type="button" data-face="3">Safety</button>
-          <button type="button" id="spin" aria-pressed="true">Pause</button>
-        </div>
-      </div>
-      <div class="reveal">
-        <p class="date">2025 to 2026 · Robotics course, EMINES</p>
-        <h3 class="title">RecyBot, a robot that recycles plastic bottles</h3>
-        <p>RecyBot is a recycling station built by our team. You insert a plastic bottle, an AI model checks that it is an empty PET bottle with no cap, and the machine shreds it into flakes that are collected for recycling.</p>
-        <p>I worked in the computer vision team, and I was in charge of the brand: the cover of the machine, the marketing video and the website, which I built myself.</p>
-        <p>The cover talks to the person standing in front of the machine. The front explains how it works in four steps. One side gives three facts about plastic in Morocco and the other gives the safety rules. The back has a QR code that opens the website.</p>
-        <p class="links"><a class="btn" href="https://ikrametaggaa1947.github.io/recybot27/" target="_blank" rel="noopener">Visit the RecyBot website</a></p>
-      </div>
-    </div>
-
-    <div class="work solo">
-      <div class="reveal">
-        <p class="date">May 2026 · EMINES Junior Enterprise, for the UM6P Research Office</p>
-        <h3 class="title">A 125-page annual report, delivered in 15 days</h3>
-        <p>Two of us delivered the 2025 annual report of the UM6P Research &amp; Global Scientific Engagement Office, written for the OCP board. It has 11 chapters, from the executive summary to the outlook for 2026.</p>
-        <p>We followed the UM6P brand guidelines on every type of page: the cover, the chapter openers, the data pages and the event pages. Here are five of them.</p>
-      </div>
-    </div>
-    <div class="pages">
-      <figure class="reveal tilt big" style="--d:0s"><img src="um6p-cover.jpg" alt="Cover of the UM6P Research Office annual report 2025" loading="lazy" width="760" height="1075"><figcaption>Cover</figcaption></figure>
-      <figure class="reveal tilt" style="--d:.1s"><img src="um6p-contents.jpg" alt="Table of contents with 11 chapters" loading="lazy" width="640" height="905"><figcaption>Table of contents</figcaption></figure>
-      <figure class="reveal tilt" style="--d:.2s"><img src="um6p-chapter.jpg" alt="Chapter opener: Strategic Research Initiatives" loading="lazy" width="640" height="905"><figcaption>Chapter opener</figcaption></figure>
-      <figure class="reveal tilt" style="--d:.3s"><img src="um6p-data.jpg" alt="Data page with two pie charts and a bar chart" loading="lazy" width="640" height="905"><figcaption>Data page</figcaption></figure>
-      <figure class="reveal tilt" style="--d:.4s"><img src="um6p-events.jpg" alt="Event page with text and a photo of a workshop" loading="lazy" width="640" height="905"><figcaption>Event page</figcaption></figure>
-    </div>
-
-    <div class="work solo">
-      <div class="reveal">
-        <p class="date">2025 to 2026 mandate · EMINES Junior Enterprise</p>
-        <h3 class="title">The brand image of EMINES Junior Enterprise</h3>
-        <p>I created this recap of our mandate to give the junior enterprise a strong brand image. It tells our year in 9 slides: 244,000 MAD in sales revenue, 13 missions, 33 junior consultants and 87.7% annual growth, plus our two hackathons with Strategy&amp; and BCG X.</p>
-      </div>
-    </div>
-    <div class="reel reveal" id="reel" tabindex="0" role="group" aria-label="Mandate recap, 9 slides">
-        <img src="eje-recap-1.jpg" alt="Slide 1: Cover slide: our 25-26 mandate highlights" loading="lazy" width="810" height="1080">
-        <img src="eje-recap-2.jpg" alt="Slide 2: 244 KMAD in sales revenue, 13 missions, 33 junior consultants, 87.7% annual growth" loading="lazy" width="810" height="1080">
-        <img src="eje-recap-3.jpg" alt="Slide 3: Strategy Consulting Hackathon, 5th edition, in partnership with Strategy&amp;" loading="lazy" width="810" height="1080">
-        <img src="eje-recap-4.jpg" alt="Slide 4: Photos from the Strategy Consulting Hackathon" loading="lazy" width="810" height="1080">
-        <img src="eje-recap-5.jpg" alt="Slide 5: DataQuest hackathon, 1st edition, in partnership with BCG X" loading="lazy" width="810" height="1080">
-        <img src="eje-recap-6.jpg" alt="Slide 6: DataQuest brought together students from three engineering schools" loading="lazy" width="810" height="1080">
-        <img src="eje-recap-7.jpg" alt="Slide 7: Our projects by type: web development, artificial intelligence, R&amp;D, robotics, design, photography" loading="lazy" width="810" height="1080">
-        <img src="eje-recap-8.jpg" alt="Slide 8: Thank you to all the members of this mandate" loading="lazy" width="810" height="1080">
-        <img src="eje-recap-9.jpg" alt="Slide 9: Contact details of EMINES Junior Enterprise" loading="lazy" width="810" height="1080">
-    </div>
-    <div class="turn reelnav">
-      <button type="button" id="prev" aria-label="Previous slide">←</button>
-      <button type="button" id="next" aria-label="Next slide">→</button>
-      <button type="button" id="play" aria-pressed="true">Pause</button>
-    </div>
-  </div>
-</section>
-
-<section id="projects">
+<section class="tint" id="projects">
   <div class="wrap">
     <h2>My projects</h2>
-    <p class="intro">Five more projects, from internships, my junior enterprise and school. Choose the kind of work you are hiring for.</p>
+    <p class="intro">Six projects from internships, client work, my junior enterprise and school. Choose the kind of work you are hiring for.</p>
     <div class="filter" role="group" aria-label="Filter projects">
-      <button data-lens="all" aria-pressed="true">All</button>
-      <button data-lens="strategy" aria-pressed="false">Strategy</button>
-      <button data-lens="consulting" aria-pressed="false">Consulting</button>
+      <button type="button" data-lens="all" aria-pressed="true">All</button>
+      <button type="button" data-lens="strategy" aria-pressed="false">Strategy</button>
+      <button type="button" data-lens="transformation" aria-pressed="false">Transformation</button>
     </div>
 
     <div class="cards two">
-      <article class="card feature" data-lens="consulting strategy">
-        <figure class="shot" style="aspect-ratio:910/506" data-src="epal.jpg" data-alt="Overview page of the permit dashboard, with key figures and two maps of Portugal"><span>The dashboard, or me at EPAL<small>epal.jpg</small></span></figure>
+      <article class="card feature" data-lens="transformation">
+        <figure class="shot" style="aspect-ratio:910/506" data-src="epal.jpg" data-alt="Overview page of the permit dashboard, with key figures and two maps of Portugal"><span>The permit dashboard<small>epal.jpg</small></span></figure>
         <div>
           <p class="date">June to September 2026 · Lisbon, Portugal</p>
-          <h3>A permit dashboard for EPAL</h3>
-          <p>The team was reading more than 400 permits for wastewater treatment plants by hand, and each one took 45 minutes or more. With another intern, I built a tool that reads a permit and shows the key information on a dashboard in <b>under a minute</b>.</p>
-          <p>The dashboard shows at a glance which permits are valid, which have expired and which expire in the next 8 months. I pitched it to the board and they adopted it. Some departments preferred the manual method at first, and I won them over too.</p>
-          <p class="kind">Consulting · Strategy</p>
+          <h3>Digitizing permit reviews at EPAL</h3>
+          <p>EPAL's team reviewed 413 wastewater discharge permits by hand. Each permit sets the conditions treated water must meet before it is released into the environment, and each review took 45 minutes or more. With another intern, I built a Python pipeline and a Power BI dashboard that cut the review to <b>about 50 seconds per permit</b>.</p>
+          <p>The dashboard shows at a glance which permits are valid, which have expired and which expire in the next 8 months. I presented it to the board, which adopted it, then helped other departments, reluctant at first, make the switch.</p>
+          <p class="kind">Transformation</p>
         </div>
       </article>
 
       <article class="card" data-lens="strategy">
-        <figure class="shot" data-src="neuratech.jpg" data-alt="Pitching NeuraTech on stage at AgorAI"><span>NeuraTech pitch, or Gitex Africa<small>neuratech.jpg</small></span></figure>
-        <p class="date">September 2024 to April 2026 · A project I started</p>
-        <h3>NeuraTech</h3>
-        <p>A project to give people with severe paralysis a way to communicate again, without surgery.</p>
-        <p>I interviewed potential users at the KHOTWA Rehabilitation Center in Ben Guerir and compared 4 existing solutions, then built the value proposition and the business model. I pitched it to investors at Gitex Africa, and it was selected for the <b>MIT Sandbox</b> incubation program. It also won the Best Pitch Award at AgorAI.</p>
+        <figure class="shot" data-src="strategyand.jpg" data-alt="At the Strategy&amp; office in Casablanca"><span>At the Strategy&amp; office<small>strategyand.jpg</small></span></figure>
+        <p class="date">March 2026 · Casablanca</p>
+        <h3>One week at Strategy&amp;</h3>
+        <p>An observation internship at Strategy&amp; (PwC). I followed 3 client engagements: a go-to-market strategy, a commercial due diligence and a foresight study.</p>
+        <p>I watched how the teams structure a problem and present their findings to clients.</p>
         <p class="kind">Strategy</p>
       </article>
 
       <article class="card" data-lens="strategy">
-        <figure class="shot" data-src="water.jpg" data-alt="Presenting the study on the future of water supply for Moroccan industry"><span>Team, or final presentation<small>water.jpg</small></span></figure>
-        <p class="date">January 2025 · Mines Paris - PSL × OCP Chair</p>
-        <h3>Water for Moroccan industry</h3>
-        <p>Moroccan industry uses about 1.03 billion m³ of water a year. In a team of 12, we compared recycling, industrial symbiosis and desalination with international examples such as Kalundborg in Denmark.</p>
-        <p>We found a potential reduction of <b>68%</b> and recommended a closed-loop water scenario for the Aïn Sebaâ industrial zone.</p>
-        <p class="kind">Strategy</p>
-      </article>
-
-      <article class="card" data-lens="consulting">
         <figure class="shot" data-src="eje.jpg" data-alt="In Porto with the director of partnerships of a Portuguese junior enterprise"><span>Porto meeting<small>eje.jpg</small></span></figure>
         <p class="date">2026 · EMINES Junior Enterprise</p>
         <h3>A partnership negotiated in person in Porto</h3>
-        <p>As Vice President, I negotiated a partnership with the junior enterprise of a Portuguese business school. I went to Porto for a business meeting with their director of partnerships, pictured here.</p>
-        <p>We offer them training in AI and automation to support their client prospecting, and we invite them to our events.</p>
-        <p class="kind">Consulting</p>
+        <p>As Vice President, I lead our partnerships department. I went to Porto to meet the director of partnerships of a Portuguese business school's junior enterprise, pictured here.</p>
+        <p>We agreed to share practices, to train their members in AI and automation for client prospecting, and to open our hackathons to them.</p>
+        <p class="kind">Strategy</p>
       </article>
 
-      <article class="card" data-lens="consulting strategy">
-        <figure class="shot" data-src="strategyand.jpg" data-alt="At the Strategy& office in Casablanca"><span>At the Strategy&amp; office<small>strategyand.jpg</small></span></figure>
-        <p class="date">March 2026 · Casablanca</p>
-        <h3>One week at Strategy&amp;</h3>
-        <p>An observation internship at Strategy&amp; (PwC). I followed 3 client engagements: a commercial due diligence, a market positioning and a foresight study.</p>
-        <p>I watched how consultants structure their thinking and how they communicate with clients.</p>
-        <p class="kind">Consulting · Strategy</p>
+      <article class="card" data-lens="strategy">
+        <figure class="shot" data-src="neuratech.jpg" data-alt="Pitching NeuraTech on stage at AgorAI"><span>NeuraTech pitch<small>neuratech.jpg</small></span></figure>
+        <p class="date">September 2024 to April 2026 · A project I started</p>
+        <h3>NeuraTech</h3>
+        <p>A start-up project to help people with severe paralysis communicate again, without surgery.</p>
+        <p>I interviewed potential users at the KHOTWA Rehabilitation Center in Ben Guerir, compared 4 existing solutions, and built the value proposition and the business model. I pitched it to investors at Gitex Africa. It was selected for the <b>MIT Sandbox</b> incubation program and won the Best Pitch Award at AgorAI.</p>
+        <p class="kind">Strategy</p>
+      </article>
+
+      <article class="card" data-lens="strategy">
+        <figure class="shot" data-src="water.jpg" data-alt="Presenting the study on the future of water supply for Moroccan industry"><span>Final presentation<small>water.jpg</small></span></figure>
+        <p class="date">January 2025 · Mines Paris – PSL × OCP Chair</p>
+        <h3>Water for Moroccan industry</h3>
+        <p>Moroccan industry used about 1.54 billion m³ of water in 2024. In a team of 12, we compared recycling, industrial symbiosis and desalination with international examples such as Kalundborg in Denmark.</p>
+        <p>We estimated that industry could save about <b>1.03 billion m³</b> of water, a <b>68%</b> cut in its need for conventional fresh water, and recommended a closed-loop water scenario for the Aïn Sebaâ industrial zone.</p>
+        <p class="kind">Strategy</p>
+      </article>
+
+      <article class="card wide" data-lens="transformation">
+        <div>
+          <p class="date">November 2024 · Client project for OCP S.A.</p>
+          <h3>Digitizing OCP's monthly accounting close</h3>
+          <p class="kind">Transformation</p>
+        </div>
+        <div>
+          <p>We interviewed OCP's Finance and Management Control department to understand how 10 teams run the monthly close, then wrote the specifications for a tool to track it.</p>
+          <p>In a team of four, we built the web platform: live progress tracking, task dependencies, deadline reminders, and an alert if the month is closed before every task is done.</p>
+        </div>
       </article>
     </div>
   </div>
 </section>
 
-<section class="tint" id="impact">
+<section id="impact">
   <div class="wrap">
     <h2>My impact</h2>
-    <p class="intro">The roles I have held, and the awards my teams have won.</p>
+    <p class="intro">The roles I have held in my junior enterprise, what we achieved, and the awards my teams have won.</p>
 
     <h3 class="sub">Leading teams</h3>
     <div class="roles">
       <div class="role">
         <time>2026 to today</time>
         <div><h3>Vice President <span>· EMINES Junior Enterprise</span></h3>
-          <p>I set the management strategy with the president and supervise the 23 board members. We follow each department's progress in an internal tool built during the term. I signed 4 partnerships with French and Portuguese junior enterprises.</p></div>
+          <p>With the president, I set our strategy: the new fields of missions we target and the partners we choose for our hackathons. I supervise the 23 board members and lead the partnerships department, which set up 4 partnerships with French and Portuguese junior enterprises. I also scoped and launched an internal tool that tracks the work of all 7 departments, so the next teams can build on it.</p></div>
       </div>
       <div class="role">
         <time>April 2026</time>
         <div><h3>Quality Director <span>· EMINES Junior Enterprise</span></h3>
-          <p>I co-led a client mission with a second Quality Director. I ran the client meetings and followed the performance of the junior consultants.</p></div>
+          <p>I co-led a client mission with a second Quality Director. I ran the client meetings and followed the work of the student team.</p></div>
       </div>
       <div class="role">
         <time>2025 to 2026</time>
         <div><h3>General Secretary and Treasurer <span>· EMINES Junior Enterprise</span></h3>
-          <p>I was the link between the 7 departments. I managed the budgets of 2 hackathons, co-organized events with BCG X and Strategy&amp;, and brought in 2 client missions worth 12,000 MAD.</p></div>
-      </div>
-      <div class="role">
-        <time>2026</time>
-        <div><h3>Sports Manager <span>· Engineers Sport Games</span></h3>
-          <p>With two other students I ran the sports program of Morocco's largest engineering student sports event: 3 days and more than 400 participants.</p></div>
+          <p>I was the link between the 7 departments and brought in 2 client missions with OCP, worth 25,000 MAD, through field prospecting. I tracked the budgets of our two hackathons and ran on-site logistics on the day of the Strategy&amp; hackathon.</p></div>
       </div>
     </div>
 
-    <h3 class="sub">Events we organized with BCG X and Strategy&amp;</h3>
+    <h3 class="sub">Our 2025–2026 mandate</h3>
+    <dl class="mandate">
+      <div><dt>244,000 MAD</dt><dd>in sales revenue</dd></div>
+      <div><dt>13</dt><dd>client missions</dd></div>
+      <div><dt>33</dt><dd>students staffed on missions</dd></div>
+      <div><dt>+87.7%</dt><dd>annual growth</dd></div>
+    </dl>
+    <p class="note">EMINES Junior Enterprise, mandate during which I was General Secretary and Treasurer.</p>
+
+    <h3 class="sub">Hackathons I helped organize with BCG X and Strategy&amp;</h3>
     <div class="pair">
       <figure><div class="shot" data-src="dqh.jpg" data-pos="50% 78%" data-alt="Participants and organizers at the DataQuest Hackathon with BCG X"><span>DataQuest with BCG X<small>dqh.jpg</small></span></div><figcaption>DataQuest Hackathon, 1st edition, with BCG X</figcaption></figure>
       <figure><div class="shot" data-src="sch.jpg" data-alt="Participants and organizers at the Strategy Consulting Hackathon with Strategy&amp;"><span>Strategy Consulting Hackathon<small>sch.jpg</small></span></div><figcaption>Strategy Consulting Hackathon, 5th edition, with Strategy&amp;</figcaption></figure>
@@ -410,7 +326,7 @@ h1,h2,h3,.mark,.belief p,.contact .addr{font-family:var(--display);font-weight:7
         <figure class="shot" data-src="agorai.jpg" data-pos="50% 62%" data-alt="Pitching at AgorAI"><span>AgorAI pitch photo<small>agorai.jpg</small></span></figure>
         <p class="date">Best Pitch Award</p>
         <h3>AgorAI</h3>
-        <p>The AI Spring School hackathon organized by École Polytechnique and OCP. We were a team of 4 and I pitched NeuraTech.</p>
+        <p>The AI Spring School hackathon organized by École Polytechnique and OCP. In a team of 4, I pitched NeuraTech's business case.</p>
       </article>
       <article class="card">
         <figure class="shot" data-src="ramadania.jpg" data-pos="50% 45%" data-alt="Our team at RamadanIA"><span>RamadanIA photo<small>ramadania.jpg</small></span></figure>
@@ -422,23 +338,10 @@ h1,h2,h3,.mark,.belief p,.contact .addr{font-family:var(--display);font-weight:7
   </div>
 </section>
 
-<section id="life">
-  <div class="wrap">
-    <h2>Outside class</h2>
-    <p class="intro">I run for the EMINES athletics team, I have played on the school football team for 4 years, and I volunteer with EMINES Solidarity.</p>
-    <div style="height:30px"></div>
-
-    <div class="gallery">
-      <figure><div class="shot" data-src="running.jpg" data-pos="50% 25%" data-alt="The EMINES athletics team on the track"><span>Running<small>running.jpg</small></span></div><figcaption>Running with the EMINES athletics team</figcaption></figure>
-      <figure><div class="shot" data-src="football.jpg" data-alt="The EMINES football team after winning first place at the CARTEL in Nantes"><span>Football<small>football.jpg</small></span></div><figcaption>The EMINES football team, first place at the CARTEL in Nantes, 2024</figcaption></figure>
-      <figure><div class="shot" data-src="volunteering.jpg" data-alt="Volunteers of EMINES Solidarity in the hills of Moulay Brahim"><span>Volunteering<small>volunteering.jpg</small></span></div><figcaption>Volunteering with EMINES Solidarity: the Goutte d'Espoir event in Moulay Brahim, 2023</figcaption></figure>
-    </div>
-  </div>
-</section>
-
 <section class="contact" id="contact">
   <div class="wrap">
     <h2>Contact</h2>
+    <p>I'm looking for an end-of-studies internship in strategy from April 2027. Write to me and I will answer quickly.</p>
     <span class="addr" id="addr">Ikrame.TAGGAA@emines.um6p.ma</span>
     <div class="row">
       <button class="btn white" id="copy" type="button">Copy email</button>
@@ -450,8 +353,8 @@ h1,h2,h3,.mark,.belief p,.contact .addr{font-family:var(--display);font-weight:7
 <footer><div class="wrap">© 2026 Ikrame Taggaa</div></footer>
 
 <script>
-/* Project filter. The choice is kept in the address (#brand), so a link can open directly on it. */
-const LENSES=['all','strategy','consulting'];
+/* Project filter. The choice is kept in the address (#strategy or #transformation), so a link can open directly on it. */
+const LENSES=['all','strategy','transformation'];
 const buttons=[...document.querySelectorAll('.filter button')];
 const cards=[...document.querySelectorAll('#projects .card')];
 function setLens(lens){
@@ -472,63 +375,8 @@ document.querySelectorAll('.shot[data-src]').forEach(f=>{
   img.alt=f.dataset.alt||'';
   if(f.dataset.pos)img.style.objectPosition=f.dataset.pos;
   img.onload=()=>{f.appendChild(img);f.classList.add('filled')};
-  img.onerror=()=>{img.onerror=null;img.src='images/'+f.dataset.src};
   img.src=f.dataset.src;
 });
-
-/* Reveal on scroll: brand work fades up as it enters the screen. Without JavaScript everything is simply visible. */
-document.documentElement.classList.add('js');
-const still=matchMedia('(prefers-reduced-motion: reduce)').matches;
-const reveals=[...document.querySelectorAll('.reveal')];
-if('IntersectionObserver' in window){
-  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
-  reveals.forEach(r=>io.observe(r));
-}else reveals.forEach(r=>r.classList.add('in'));
-
-/* RecyBot cover: the four faces wrap a box that turns slowly. The buttons stop it on one face. */
-(()=>{
-  const box=document.getElementById('box'),stage=document.getElementById('stage'),spin=document.getElementById('spin');
-  const faces=[...stage.querySelectorAll('[data-face]')];
-  let angle=-28,auto=!still,seen=false,last=0;
-  const draw=()=>{box.style.transform=`rotateX(-7deg) rotateY(${angle}deg)`};
-  const label=()=>{spin.textContent=auto?'Pause':'Turn';spin.setAttribute('aria-pressed',auto)};
-  const mark=()=>{const k=((Math.round(-angle/90)%4)+4)%4;faces.forEach((b,i)=>b.classList.toggle('on',!auto&&i===k))};
-  function tick(t){
-    if(auto&&seen){if(last)angle-=(t-last)*0.018;last=t;draw()}else last=0;
-    requestAnimationFrame(tick);
-  }
-  faces.forEach((b,i)=>b.addEventListener('click',()=>{
-    auto=false;label();
-    const turns=Math.round((angle+i*90)/360);
-    angle=turns*360-i*90;
-    box.classList.add('snap');draw();mark();
-  }));
-  spin.addEventListener('click',()=>{auto=!auto;box.classList.toggle('snap',!auto);label();mark()});
-  if('IntersectionObserver' in window)new IntersectionObserver(es=>{seen=es[0].isIntersecting}).observe(stage);else seen=true;
-  label();draw();requestAnimationFrame(tick);
-})();
-
-/* Mandate recap: a strip of slides that moves on by one every few seconds, until the visitor takes over. */
-(()=>{
-  const reel=document.getElementById('reel'),play=document.getElementById('play');
-  let auto=!still,seen=false;
-  const step=()=>{const a=reel.children[0],b=reel.children[1];return b.offsetLeft-a.offsetLeft};
-  const go=d=>{
-    const end=reel.scrollWidth-reel.clientWidth;
-    if(d>0&&reel.scrollLeft>=end-4)reel.scrollTo({left:0,behavior:still?'auto':'smooth'});
-    else reel.scrollBy({left:d*step(),behavior:still?'auto':'smooth'});
-  };
-  const label=()=>{play.textContent=auto?'Pause':'Play';play.setAttribute('aria-pressed',auto)};
-  const stop=()=>{auto=false;label()};
-  document.getElementById('prev').addEventListener('click',()=>{stop();go(-1)});
-  document.getElementById('next').addEventListener('click',()=>{stop();go(1)});
-  play.addEventListener('click',()=>{auto=!auto;label()});
-  ['pointerdown','wheel','touchstart','keydown'].forEach(e=>reel.addEventListener(e,stop,{passive:true}));
-  if('IntersectionObserver' in window)new IntersectionObserver(es=>{seen=es[0].isIntersecting},{threshold:.4}).observe(reel);else seen=true;
-  setInterval(()=>{if(auto&&seen)go(1)},2800);
-  label();
-})();
-
 
 /* Copy email */
 const copy=document.getElementById('copy'),addr=document.getElementById('addr');
@@ -538,5 +386,6 @@ copy.addEventListener('click',()=>{
   try{navigator.clipboard.writeText(addr.textContent).then(done,select)}catch(e){select()}
 });
 </script>
+
 </body>
 </html>
